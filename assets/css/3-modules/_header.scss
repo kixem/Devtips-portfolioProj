@@ -1,7 +1,8 @@
 header {
     
     height: 450px;
-    background: #ccc;
+    background: url(/assets/img/hero-bg.jpg) center center;
+    background-size: cover;
 
     
     .logo {
@@ -9,6 +10,10 @@ header {
         background: #999;
         float: left;
         margin: 10px 0 0 30px;
+        background: transparent;
+        path{
+            fill: rgba(0,0,0,0.7); 
+            }
     }
 
       nav {
@@ -17,9 +22,7 @@ header {
             a {
         display: inline-block;
         margin-left: 20px;
-        font-weight: 700;
-        font-size: 14px;
-        text-transform: uppercase;
+        @extend %small-bold;
         color: rgba(0,0,0,0.7);
                 &:hover {
                     color: rgba(0,0,0,1);
@@ -38,6 +41,7 @@ header {
          letter-spacing: 0.05em;
          margin-bottom: 20px;
          clear: both;
+         padding-top: 100px;
              span {
                  display: inline-block;
                  padding: 0.5em 0.2em;
@@ -48,8 +52,7 @@ header {
     
         .kicker {
              text-align: center;
-            font-weight: 700;
-            text-transform: uppercase;
+            @extend %small-bold;
             letter-spacing: 0.05em;
             color: white;
             line-height: 1;

@@ -1,3 +1,9 @@
+# Site settings
+title: Artists Theme
+email: artist@email.com
+description: Thinker // Designer // Youtuber
+
+
 # Build settings
 
 markdown: kramdown

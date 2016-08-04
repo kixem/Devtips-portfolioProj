@@ -1,0 +1,51 @@
+h3 {
+    @extend %small-bold;
+    color: $ascent-light;
+    text-align: center;
+    padding: 100px 0 30px 0;
+}
+
+.face-lockup {
+    max-width: 780px;
+    @include display(flex);
+    margin: 0 auto;
+    @include align-items(center);
+    @include justify-content(space-around);
+    
+    .face-img{
+        @include size(200px);
+        border-radius: 50%;
+        background: url(/assets/img/travitar.jpg) center center;
+        order: 3;
+    }
+    
+    [class^="icon-"]{
+        @include size(100px);
+        background: $bgcolor;
+        border-radius: 50%;
+        path{
+            fill: $ascent;
+        }
+        &.icon-pencil {
+            order: 1;
+        }
+        &.icon-mouse {
+            order: 2;
+        }
+        &.icon-browser {
+            order: 4;
+        }
+        &.icon-video {
+            order: 5;
+        }
+    }
+}
+
+.blurb {
+    max-width: 620px;
+    padding: 0 15px;
+    margin: 50px auto;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 300s;
+}
