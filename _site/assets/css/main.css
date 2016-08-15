@@ -379,27 +379,28 @@ h3 {
   font-weight: 300s; }
 
 .skill-lockup {
-  max-width: 700px;
-  margin: 50px auto;
-  color: #999; }
+  max-width: 540px;
+  margin: 100px auto;
+  color: #999;
+  background: pinkm; }
   .skill-lockup:after {
     content: "";
     display: table;
     clear: both; }
 
 .skill-unit {
-  width: 350px;
+  width: 270px;
   float: left; }
 
 .skill-icons {
   font-size: 0;
-  margin-bottom: 30px; }
+  margin: 0px 0 30px; }
   .skill-icons span {
     display: inline-block;
     height: 14px;
     width: 14px;
-    background-color: blue;
-    margin-right: 5px;
+    background-color: #c99065;
+    margin-right: 8px;
     border-radius: 50%; }
     .skill-icons span:after {
       content: "";
@@ -409,3 +410,9 @@ h3 {
       background: #fff;
       border-radius: 50%;
       margin: 2px; }
+
+@media screen and (max-width: 514px) {
+  .skill-lockup {
+    width: 270px; } }
+.skill-1 span:nth-child(n+1), .skill-2 span:nth-child(n+2), .skill-3 span:nth-child(n+3), .skill-4 span:nth-child(n+4), .skill-5 span:nth-child(n+5), .skill-6 span:nth-child(n+6), .skill-7 span:nth-child(n+7), .skill-8 span:nth-child(n+8), .skill-9 span:nth-child(n+9), .skill-10 span:nth-child(n+10) {
+  background: #e5eaee; }
