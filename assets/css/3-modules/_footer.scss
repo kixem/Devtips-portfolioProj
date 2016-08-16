@@ -1,19 +1,12 @@
 footer {
-    background: url(/assets/img/hero-bg.jpg) center center;
-    background-size: cover;
+    @extend %bg-img;
     .lockup {
         padding: 30px;
         @include clearfix;
-        .logo{
-            @include size(50px);  
-            float: left;
-            margin-right: 30px;
-            path {
-                fill: rgba(0,0,0,0.5);
-            }
-        }
+     
         .content-wrap{
             float: left;
+            margin-left: 80px;
             a {
                 @extend %small-bold;
                 color: rgba(0,0,0,0.5);
@@ -22,6 +15,9 @@ footer {
                 }
                 display: inline-block;
                 margin-right: 30px;
+            }
+            p{
+                margin-bottom: 0;
             }
             .copyright {
                 margin: 0;
